@@ -1,4 +1,4 @@
-@import url("font-awesome.min.css");
+s@import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
 /*
@@ -1832,4 +1832,12 @@ a:hover .recuadro{ color:white; background: rgba(255, 255, 255, 0.25); }
 		background: #eda68e;
 		color: white;
 		font-size: 1.2em;
+	}
+
+	.loader-container{
+		height: 100%;
+		position: fixed;
+		width: 100%;
+		z-index: 9999;
+		background: white;
 	}

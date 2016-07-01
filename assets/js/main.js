@@ -4,6 +4,28 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+var imgCount = $("img").length, currentImgCount = 0;
+
+  $(document).ready(function () {
+      $("img").show(300);
+      $(".preloadBG").each(function () {
+          var t, n, r = $(this),
+          i = r.css("background-image");
+          i && (t = i.replace(/(^url\()|(\)$|[\"\'])/g, ""),
+          n = new Image, n.src = t, n.complete && $(n).trigger("load"))
+      })
+  });
+  $("img").load(function () {
+      currentImgCount++;
+      currentImgCount == imgCount && setTimeout(function () {
+          /mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () { window.scrollTo(0, 1) },
+          2e3);
+          $(".loader-container").fadeOut();
+          $("img").unbind("load")
+      },
+      2e3)
+  }).each(function () { this.complete && $(this).trigger("load") });
+
 (function($) {
 
 	$("#banner").unslider({
