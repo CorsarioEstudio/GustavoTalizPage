@@ -29,7 +29,7 @@ video {
 }
 .loader {
   height:86px;
-  left:43%;
+  left:30%;
   position:absolute;
   top:50%;
   -webkit-transform:translateX(-50%) translateY(-50%);
@@ -130,5 +130,26 @@ video {
 #loading-logo{
     position:absolute;
     top:47%;
-    left:42%;
+    left:29%;
+}
+
+@media (min-width: 768px) {
+  .loader {
+    height:86px;
+    left:43%;
+    position:absolute;
+    top:50%;
+    -webkit-transform:translateX(-50%) translateY(-50%);
+    -moz-transform:translateX(-50%) translateY(-50%);
+    -ms-transform:translateX(-50%) translateY(-50%);
+    -o-transform:translateX(-50%) translateY(-50%);
+    transform:translateX(-50%) translateY(-50%);
+    width:86px;
+  }
+
+  #loading-logo{
+      position:absolute;
+      top:47%;
+      left:42%;
+  }
 }
