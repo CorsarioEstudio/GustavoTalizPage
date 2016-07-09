@@ -296,7 +296,6 @@ button,
 	border: 0;
 	border-radius: 5px;
 	background: #d52349;
-	color: #fff !important;
 	font-weight: 700;
 	outline: 0;
 	-moz-transition: background-color .25s ease-in-out;
@@ -821,7 +820,6 @@ ol.default li {
 	button,
 	.button {
 		font-size: 1.1em;
-		padding: 0.65em 1.5em 0.65em 1.5em;
 	}
 
 	input[type="button"].big,
@@ -1165,7 +1163,6 @@ ol.default li {
 	button,
 	.button {
 		position: relative;
-		padding: 0.65em 0 0.65em 0 !important;
 		width: 100%;
 		text-align: center;
 		font-size: 1.25em;
@@ -1500,6 +1497,10 @@ ol.default li {
 	text-align: center;
 }
 
+.text-right{
+	text-align: right;
+}
+
 .text-justify{
 	text-align: justify;;
 }
@@ -1531,6 +1532,40 @@ ol.default li {
 }
 
 /*TEST*/
+/* HIGHLIGHT */
+.highlight .button {
+	font-family: "Nexa Light" !important;
+	display: inline-block;
+	color: #212121;
+	background: transparent;
+	width: 100%;
+	min-width: 130px;
+	height: 40px;
+	line-height: 37px;
+	border-radius: 1px;
+	position: relative;
+	overflow: hidden;
+	border: 1.25px solid #212121;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.highlight .button:before {
+	content: "";
+	position: absolute;
+	top: -30px;
+	left: -80px;
+	height: 85px;
+	width: 53px;
+	background: #212121;
+	transform: rotate(20deg);
+	animation: 1s cubic-bezier(0.09, 0.07, 0.39, 0.86) infinite;
+}
+
+.highlight .button:hover:before {
+	left: 108%;
+	transition: all .5s;
+}
 
 .overlay {
 	width:100%;
@@ -1773,17 +1808,6 @@ a:hover .recuadro{ color:white; background: rgba(255, 255, 255, 0.25); }
 	max-height: 390px;
 }
 
-.portfolio-item .desc{
-	height: 390px;
-	padding-top: 80px;
-}
-
-.portfolio-item .desc footer{
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
-}
-
 .ghost-button {
 	display: inline-block;
 	width: 140px;
@@ -1848,13 +1872,40 @@ a:hover .recuadro{ color:white; background: rgba(255, 255, 255, 0.25); }
 	margin-bottom: .75rem;
 }
 
+.horizontal-card{
+	position: relative;
+	display: block;
+	margin-bottom: .75rem;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: .25rem;
+}
+.horizontal-card .card-img {
+	border-radius: .25rem .25rem 0 0;
+	max-width: 100%;
+}
+.horizontal-card .card-block {
+	padding: 1.25rem;
+}
+.horizontal-card .card-title {
+	margin-bottom: .75rem;
+}
+
+.horizontal-card div.card-img {
+    border-radius: .25rem .25rem 0 0;
+    width: 100%;
+    height: 340px;
+    background-size: auto 125%;
+    background-position: center;
+}
 /*BOOTSTRAP XS*/
+
 h1, h2, h3, h4, h5, h6{
 	letter-spacing: 0;
 	font-size: .7em;
 }
 
-body.overflow-block{
+.overflow-block{
 	overflow: hidden;
 }
 
@@ -1989,6 +2040,10 @@ section.event{
 	transform: translate(0, 0);
 }
 
+#navMobile .links ul {
+	padding: 0;
+}
+
 #navMobile .links li {
 	padding: 10px;
 	font-size: 1.5em;
@@ -2041,8 +2096,17 @@ section.event{
 	transform: translate(5px, 5px);
 }
 
+.hidden--xs{
+	display: none;
+}
+
 /*BOOTSTRAP SM*/
 @media (min-width: 768px) {
+
+	.hidden-sm{
+		display: none;
+	}
+
 	#nav{
 		display: block;;
 	}
@@ -2083,7 +2147,7 @@ section.event{
 	}
 
 	.events > div > div{
-			padding: 15px !important;
+		padding: 15px !important;
 	}
 
 	.about-me > div > .row{
@@ -2146,6 +2210,52 @@ section.event{
 	#main-wrapper {
 		padding: 2em 0 2em 0;
 	}
+
+	.horizontal-card{
+		position: relative;
+		display: inline-block;;
+		margin-bottom: .75rem;
+		background-color: #fff;
+		border: 1px solid #e5e5e5;
+		border-radius: .25rem;
+	}
+	.horizontal-card .card-img {
+		border-radius: .25rem .25rem 0 0;
+		max-width: 50%;
+		float: left;
+	}
+
+	.horizontal-card.right .card-img {
+		float: none;
+	}
+
+	.horizontal-card .card-block {
+		padding: 5.25rem;
+		float: left;
+		width: 50%;
+	}
+	.horizontal-card .card-title {
+		margin-bottom: .75rem;
+	}
+
+	.horizontal-card div.card-img {
+	    border-radius: .25rem .25rem 0 0;
+	    width: 50%;
+	    height: 340px;
+	    float: left;
+	    background-size: auto 100%;
+	    background-position: center;
+	}
+
+	.horizontal-card .card-block footer{
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+	}
+
+	.horizontal-card.right .card-block footer{
+		right: 51.5%;
+	}
 }
 
 /*BOOTSTRAP MD*/
@@ -2158,4 +2268,9 @@ section.event{
 
 /*BOOTSTRAP LG*/
 @media (min-width: 1200px){
+}
+
+
+.blog{
+	overflow: hidden;
 }

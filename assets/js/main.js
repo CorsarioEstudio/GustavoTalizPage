@@ -50,7 +50,7 @@ var imgCount = $("img").length, currentImgCount = 0;
     //Mobile menu toggle
     $btnMenu.click(function () {
       $navMobile.toggleClass("active");
-      $body.toggleClass("overflow-block");
+      $("html, body").toggleClass("overflow-block");
     });
 
 		// Disable animations/transitions until the page has loaded.
