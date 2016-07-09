@@ -925,6 +925,7 @@ ol.default li {
 		outline: 0;
 
 		font-size: 18px;
+		font-weight: 100;
 	}
 
 	#nav > ul > li:hover > a, #nav > ul > li.active > a {
@@ -2138,7 +2139,7 @@ section.event{
 	}
 
 	.unslider-nav{
-		display: none;
+		display: block;
 	}
 
 	section.event{
