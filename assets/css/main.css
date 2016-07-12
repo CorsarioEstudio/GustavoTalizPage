@@ -1,5 +1,6 @@
-s@import url("font-awesome.min.css");
+@import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
+@import url("fonts/font.css");
 
 /*
 Dopetrope by HTML5 UP
@@ -49,7 +50,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6{
-	font-family: "Nexa Light" !important;
+	font-family: "NexaLight" !important;
 	letter-spacing: 4px;
 }
 
@@ -118,7 +119,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 p {
-	font-family: "Nexa Light";
+	font-family: "NexaLight";
 }
 
 a {
@@ -913,7 +914,7 @@ ol.default li {
 	}
 
 	#nav > ul > li > a {
-		font-family: "Nexa Light";
+		font-family: "NexaLight";
 		border-radius: 5px;
 		color: #fff;
 		text-decoration: none;
@@ -1576,7 +1577,7 @@ ol.default li {
   100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }/* HIGHLIGHT */
 .highlight .button {
-	font-family: "Nexa Light" !important;
+	font-family: "NexaLight" !important;
 	display: inline-block;
 	color: #212121;
 	background: transparent;
