@@ -52,6 +52,9 @@ video {
   transform:translateX(-50%) translateY(-50%);
   width:70px;
 }
+.square img{
+  max-width: 100%;
+}
 .loader .lines {
   -webkit-animation:loader 1s infinite;
   animation:loader 1s infinite;

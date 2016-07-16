@@ -1570,34 +1570,33 @@ ol.default li {
 	0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
 	50%  { opacity: 1;  }
 	100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
-	}/* HIGHLIGHT */
+	}
+
+	/* HIGHLIGHT */
 	.highlight .button {
 		font-family: "NexaLight" !important;
-		display: inline-block;
-		color: #212121;
-		background: transparent;
-		width: 100%;
-		min-width: 130px;
-		height: 40px;
-		line-height: 37px;
-		border-radius: 1px;
-		position: relative;
-		overflow: hidden;
-		border: 1.25px solid #212121;
-		font-size: 14px;
-		text-decoration: none;
+    display: inline-block;
+    color: #656565;
+    background-color: white;
+    width: 100%;
+    min-width: 130px;
+    height: 40px;
+    line-height: 37px;
+    border-radius: 1px;
+    position: relative;
+    overflow: hidden;
 	}
 
 	.highlight .button:before {
 		content: "";
-		position: absolute;
-		top: -30px;
-		left: -80px;
-		height: 85px;
-		width: 53px;
-		background: #212121;
-		transform: rotate(20deg);
-		animation: 1s cubic-bezier(0.09, 0.07, 0.39, 0.86) infinite;
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 85px;
+    width: 53px;
+    background: rgb(239, 239, 239);
+    transform: rotate(20deg);
+    animation: 3s cubic-bezier(0.09, 0.07, 0.39, 0.86) infinite;
 	}
 
 	.highlight .button:hover:before {
@@ -1783,8 +1782,8 @@ ol.default li {
 	#header-wrapper .icons span {
 		border: 1px solid;
 		color: #fff;
-		width: 35px;
-		height: 35px;
+		width: 31px;
+		height: 31px;
 		text-align: center;
 		padding-top: 7px;
 		margin: 7px;
@@ -1792,14 +1791,14 @@ ol.default li {
 		-moz-transition: all .5s ease 0s;
 		-o-transition: all .5s ease 0s;
 		transition: all .5s ease 0s;
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	footer .icons span {
 		border: 1px solid;
 		color: #898989;
-		width: 35px;
-		height: 35px;
+		width: 31px;
+		height: 31px;
 		text-align: center;
 		padding-top: 7px;
 		margin: 7px;
@@ -1807,7 +1806,7 @@ ol.default li {
 		-moz-transition: all .5s ease 0s;
 		-o-transition: all .5s ease 0s;
 		transition: all .5s ease 0s;
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	.icons span:hover {
