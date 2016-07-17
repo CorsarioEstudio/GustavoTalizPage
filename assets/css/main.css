@@ -1614,6 +1614,7 @@ ol.default li {
 	border-radius: 1px;
 	position: relative;
 	overflow: hidden;
+	border: none;
 }
 
 .categorias .highlight .button:before {
