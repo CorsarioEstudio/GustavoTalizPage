@@ -1812,8 +1812,8 @@ ol.default li {
 #header-wrapper .icons span {
 	border: 1px solid;
 	color: #fff;
-	width: 35px;
-	height: 35px;
+	width: 31px;
+	height: 31px;
 	text-align: center;
 	padding-top: 7px;
 	margin: 7px;
@@ -1821,7 +1821,7 @@ ol.default li {
 	-moz-transition: all .5s ease 0s;
 	-o-transition: all .5s ease 0s;
 	transition: all .5s ease 0s;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 footer .icons span {
